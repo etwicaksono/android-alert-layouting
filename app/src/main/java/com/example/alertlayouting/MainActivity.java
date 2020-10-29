@@ -38,6 +38,9 @@ Button btnToast, btnAlert, btnLayouting; // variabel button
             startActivity(intenalert);
         }else if(v.getId()== R.id.btntoast){
 
+        }else{
+            Intent intenlogin = new Intent (  this, LayoutingActivity.class);
+            startActivity(intenlogin);
         }
     }
 }
