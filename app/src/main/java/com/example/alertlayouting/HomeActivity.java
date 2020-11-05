@@ -54,7 +54,7 @@ DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 Intent data = new Intent();
-                                data.putExtra("key_logout", "Anda Telah Logout, Silahkan Logout Lagi");
+                                data.putExtra("key_logout", "Anda Telah Logout, Silahkan login lagi");
                                 setResult(Activity.RESULT_OK, data);
                                 finish();
                             }

@@ -43,9 +43,9 @@ public class LayoutingActivity extends AppCompatActivity implements View.OnClick
                 String password = edtPassword.getText().toString();
                 // TODO membuat kondisi error bila username dan pass harus diisi lebih dari 6 karakter huruf
                 if(username.length() < 6 ){
-                    edtUsername.setError("Username Harus Lebih dari 6 Character");
+                    edtUsername.setError("Username Harus Lebih dari 6 karacter");
                 } else if (password.length() < 6 ){
-                    edtPassword.setError("Password Harus Lebih dari 6 Character");
+                    edtPassword.setError("Password Harus Lebih dari 6 karacter");
             }else{
                // TODO membuat kondisi jika username dan pass sesuai maka akan menuju kepada halaman home
                     Intent intenHome = new Intent(LayoutingActivity.this,HomeActivity.class);
