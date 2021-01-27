@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         // Inisialisasi dari variabel ke id layout
         setContentView(R.layout.activity_main);
-        setContentView(R.layout.activity_main);
         btnToast = (Button) findViewById(R.id.btntoast);
         btnAlert = (Button) findViewById(R.id.btnalert);
         btnLayouting = (Button) findViewById(R.id.btnlayouting);

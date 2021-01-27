@@ -16,22 +16,24 @@ import android.widget.Toast;
 
 public class LayoutingActivity extends AppCompatActivity implements View.OnClickListener{
 //TODO membuat variabel
-    Button btnLogin;
+    Button btnLogin, btnRegister;
     EditText edtUsername, edtPassword;
-    TextView tvRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if(this!=null)this.getSupportActionBar().hide();
+
         setContentView(R.layout.activity_layouting);
         // TODO Inisialisasi variabel dengan id yang ada di activity_layouting.xml
         btnLogin = findViewById(R.id.btn_login);
         edtPassword = findViewById(R.id.edt_password);
         edtUsername = findViewById(R.id.edt_username);
-        tvRegister = findViewById(R.id.tv_register);
+        btnRegister = findViewById(R.id.btn_register);
         //TODO handling halaman
         btnLogin.setOnClickListener(this);
-        tvRegister.setOnClickListener(this);
+        btnRegister.setOnClickListener(this);
     }
 
     @Override
@@ -54,7 +56,7 @@ public class LayoutingActivity extends AppCompatActivity implements View.OnClick
                     // TODO intenHome adalah variabel untuk handling pindah halaman
                 }
                 break;
-            case R.id.tv_register:
+            case R.id.btn_register:
                 // Here to Handling register
                 break;
         }

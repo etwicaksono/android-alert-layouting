@@ -4,4 +4,8 @@
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
+
+
+    <string name="app_name_secondary">APLIKASI OMAH KOI</string>
+    <string name="login_to_next">Masuk untuk melanjutkan</string>
 </resources>
